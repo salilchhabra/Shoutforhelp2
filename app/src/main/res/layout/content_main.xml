@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.salil.shoutforhelp.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@mipmap/help"
+    android:scaleType="fitXY"
+    android:alpha="0.5"/>
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="10dp"
+        android:text=" I am in danger .Please help me. I am at this location:"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/t3"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="18dp"
+        android:text="Latitude:"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+    />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/t1"
+        android:layout_below="@+id/t2"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Longitude:"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+    />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Add contacts"
+        android:onClick="onClick"/>
+
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="170dp"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/t3"
+        android:layout_below="@+id/b1"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="100dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        app:srcCompat="@mipmap/alert"
+        android:onClick="green"/>
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        app:srcCompat="@mipmap/alert1"
+        android:onClick="red"
+        />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b1"
+        android:layout_marginBottom="17dp"
+        android:layout_toEndOf="@+id/b1"
+        android:text="Switch"
+        android:textColor="@android:color/black"
+    />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/t3"
+        android:layout_alignTop="@+id/switch1"
+        android:text="Danger mode:"
+        android:textColor="@android:color/black"
+    android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/t3"
+        android:layout_alignEnd="@+id/textView"
+        android:text=""
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/t3"
+        android:layout_alignStart="@+id/t4"
+        android:text=""
+        android:textColor="@android:color/black"
+        />
+
+
+
+
+</RelativeLayout>
